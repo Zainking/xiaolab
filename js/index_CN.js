@@ -26,7 +26,7 @@
 		        }  
 	    });  
 	}
-	loadArticle(window.location.hash.split("#")[1] || "");
+	loadArticle(window.location.hash.split("#")[1] || "bio");
 	$("nav a").click(function(){
 		$("nav a").removeClass('selected');
 		this.classList.add('selected');
