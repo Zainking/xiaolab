@@ -5,6 +5,9 @@
 	font-size: 14px;
 	font-family: "微软雅黑";
 	line-height: 1.5;
+	::selection{background:#f4f4f4; color:white;}  
+	::-moz-selection{background:#f4f4f4; color:white;}  
+	::-webkit-selection{background:#f4f4f4; color:white;}  
 }
 body{
 	background-color: #f4f4f4;
