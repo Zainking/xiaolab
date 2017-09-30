@@ -4,14 +4,13 @@
 		window.location.hash = name;
 		$.ajax( {  
 	        url : "article/article." + name + ".html",  
-	        type : 'GET',  
-	        jsonpCallback : "略",  
+	        type : 'GET',   
 	        success : function(data){
 					$("article#main").html(data);
 				    $("title").text("XiaoLab - " + name);
 				},
 	        error : function(){  
-		            $("article#main").html("Page not found");
+		            $("article#main").html("<section><p style='text-align: center;'>Page not found</p></section>");
 		            $("title").text("XiaoLab - 404");
 		            $("nav a").removeClass('selected');
 		        }  

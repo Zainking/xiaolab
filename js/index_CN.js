@@ -11,8 +11,7 @@
 		}
 		$.ajax( {  
 	        url : "article/article." + name + "_CN.html",  
-	        type : 'GET',  
-	        jsonpCallback : "略",  
+	        type : 'GET',   
 	        success : function(data){
 					$("article#main").html(data);
 				    $("title").text("XiaoLab - " + dict[name]);
@@ -20,7 +19,7 @@
 				    $("nav a[href='#" + name + "']").addClass('selected');
 				},
 	        error : function(){  
-		            $("article#main").html("没有找到页面");
+		            $("article#main").html("<section><p style='text-align: center;'>没有找到页面</p></section>");
 		            $("title").text("XiaoLab - 404");
 		            $("nav a").removeClass('selected');
 		        }  
