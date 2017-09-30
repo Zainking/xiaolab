@@ -3,7 +3,7 @@
 		$("article#main").empty();
 		window.location.hash = name;
 		var dict = {
-			"dio" : "个人简介",
+			"bio" : "个人简介",
 			"research" : "研究工作",
 			"teaching" : "课堂教学",
 			"service" : "社会服务",
