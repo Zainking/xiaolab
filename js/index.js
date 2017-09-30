@@ -8,6 +8,7 @@
 	        success : function(data){
 					$("article#main").html(data);
 				    $("title").text("XiaoLab - " + name);
+				    $("nav a[href='#" + name + "']").addClass('selected');
 				},
 	        error : function(){  
 		            $("article#main").html("<section><p style='text-align: center;'>Page not found</p></section>");

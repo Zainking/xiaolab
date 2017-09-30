@@ -15,7 +15,6 @@
 	        success : function(data){
 					$("article#main").html(data);
 				    $("title").text("XiaoLab - " + dict[name]);
-				    $("nav a").removeClass('selected');
 				    $("nav a[href='#" + name + "']").addClass('selected');
 				},
 	        error : function(){  
