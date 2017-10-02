@@ -1,3 +1,69 @@
+<style>
+	#Jnum,#Cnum{
+		font-style: italic;
+	}
+	#Jnum span,#Cnum span{
+		font-weight: 700;
+	}
+	#paperList{
+		list-style: none;
+	}
+	.time{
+		color: #777;
+	}
+	.type{
+		font-style: italic;
+	}
+	.paperType{
+		color: #d32024;
+		margin-right: 10px;
+	}
+	#paperList li{
+		padding-left: 20px;
+		border-left: 2px solid #aaa;
+		padding-bottom: 30px
+	}
+	#paperList li::before{
+		content: "";
+		display: inline-block;
+		border: 10px solid;
+		border-radius: 50%;
+		float: left;
+		margin-left: -30px;;
+	}
+</style>
+<h2>当前研究重点</h2>
 <section>
-	<p style="text-align: center;">建设中</p>
+	<p>自安全通信和自安全网络, 数据分析与可视化, 高性能计算应用</p>
 </section>
+<h2>经费来源（主持）</h2>
+<section>
+	<p>国家自然科学基金青年基金; “核高基“国家重大专项外协项目群; 国家安全部重点研发计划; “2011”计划高性能计算协同创新中心平台项目</p>
+</section>
+<h2>成果发表 (<a href="https://scholar.google.com/citations?user=drWH-BYAAAAJ&hl=en">谷歌学术简历</a>)</h2>
+<h3>专著</h3>
+<section>
+	<p><strong>Dynamic Secrets in Communication Security</strong>, Sheng Xiao, Weibo Gong, and Donald Towsley</p>
+	<p>Publication Date: August 22, 2013 (U.S.), October 16, 2015 (China) | ISBN-10: 1461478308 | ISBN-13: 978-1461478300 | Available at: <a href="//amazon.com">amazon.com</a>, <a href="//amazon.cn">amazon.cn</a>, and multiple online book sellers.</p>
+</section>
+<h3>论文发表</h3>
+<div id="timeline">
+	<section>
+		<p id="Jnum">Journal Articles Num:<span>0</span></p>
+		<p id="Cnum">Conference Papers Num: <span>0</span></p>
+	</section>
+	<ul id="paperList">
+
+	</ul>
+</div>
+<script>
+!function(){
+	$.get('article/module/module.paperList.html',{},function(data){
+		$("#paperList").append(data);
+		$("#Cnum span").text($("[data-paperType='conference']").length);
+		$("#Jnum span").text($("[data-paperType='journal']").length);
+		$("[data-paperType='conference'] h4").prepend("<span class='paperType'>" + "会议论文" + "</span>");
+		$("[data-paperType='journal'] h4").prepend("<span class='paperType'>" + "期刊论文" + "</span>");
+	});
+}();
+</script>

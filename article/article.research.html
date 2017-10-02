@@ -1,3 +1,69 @@
+<style>
+	#Jnum,#Cnum{
+		font-style: italic;
+	}
+	#Jnum span,#Cnum span{
+		font-weight: 700;
+	}
+	#paperList{
+		list-style: none;
+	}
+	.time{
+		color: #777;
+	}
+	.type{
+		font-style: italic;
+	}
+	.paperType{
+		color: #d32024;
+		margin-right: 10px;
+	}
+	#paperList li{
+		padding-left: 20px;
+		border-left: 2px solid #aaa;
+		padding-bottom: 30px
+	}
+	#paperList li::before{
+		content: "";
+		display: inline-block;
+		border: 10px solid;
+		border-radius: 50%;
+		float: left;
+		margin-left: -30px;;
+	}
+</style>
+<h2>Current Research Interests</h2>
 <section>
-	<p style="text-align: center;">under construction</p>
+	<p>Self-secure communication and network, data analysis and visualization, HPC applications</p>
 </section>
+<h2>Funding Sources (as PI)</h2>
+<section>
+	<p>NSFC Young Scholar Project; Exterior programs from “Core Electronic Devices, High-end Generic Chips and Basic Software” National Major Project; Ministry of State Security Key Research Project; “2011” National Collaborative Innovation Center for High Performance Computing. </p>
+</section>
+<h2>Publications (<a href="https://scholar.google.com/citations?user=drWH-BYAAAAJ&hl=en">Google Scholar Profile</a>)</h2>
+<h3>Book</h3>
+<section>
+	<p><strong>Dynamic Secrets in Communication Security</strong>, Sheng Xiao, Weibo Gong, and Donald Towsley</p>
+	<p>Publication Date: August 22, 2013 (U.S.), October 16, 2015 (China) | ISBN-10: 1461478308 | ISBN-13: 978-1461478300 | Available at: <a href="//amazon.com">amazon.com</a>, <a href="//amazon.cn">amazon.cn</a>, and multiple online book sellers.</p>
+</section>
+<h3>Papers and Articles</h3>
+<div id="timeline">
+	<section>
+		<p id="Jnum">Journal Articles Num:<span>0</span></p>
+		<p id="Cnum">Conference Papers Num: <span>0</span></p>
+	</section>
+	<ul id="paperList">
+
+	</ul>
+</div>
+<script>
+!function(){
+	$.get('article/module/module.paperList.html',{},function(data){
+		$("#paperList").append(data);
+		$("#Cnum span").text($("[data-paperType='conference']").length);
+		$("#Jnum span").text($("[data-paperType='journal']").length);
+		$("[data-paperType='conference'] h4").prepend("<span class='paperType'>" + "Conference Papers" + "</span>");
+		$("[data-paperType='journal'] h4").prepend("<span class='paperType'>" + "Journal Articles" + "</span>");
+	});
+}();
+</script>
