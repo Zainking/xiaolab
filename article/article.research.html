@@ -50,10 +50,16 @@
 	<p><strong>Dynamic Secrets in Communication Security</strong>, Sheng Xiao, Weibo Gong, and Donald Towsley</p>
 	<p>Publication Date: August 22, 2013 (U.S.), October 16, 2015 (China) | ISBN-10: 1461478308 | ISBN-13: 978-1461478300 | Available at: <a href="//amazon.com">amazon.com</a>, <a href="//amazon.cn">amazon.cn</a>, and multiple online book sellers.</p>
 </section>
-<h3>Papers and Articles</h3>
+<h3>conference papers and journal articles</h3>
 <div id="timeline">
 	<ul id="paperList">
-
+		<template id="listTemp">
+			<li data-paperType="{{type}}">
+			  <span class="time">{{date}}</span>
+			  <h4>{{pub_info}}</h4>
+			  <p>{{title}}, {{{authors}}}</p>
+			</li>
+		</template>
 	</ul>
 	<section>
 		<span id="Jnum">Journal Article:<span>0</span></span>,
@@ -62,12 +68,25 @@
 </div>
 <script>
 !function(){
-	$.get('article/module/module.paperList.html',{},function(data){
-		$("#paperList").append(data);
-		$("#Cnum span").text($("[data-paperType='conference']").length);
-		$("#Jnum span").text($("[data-paperType='journal']").length);
-		$("[data-paperType='conference'] h4").prepend("<span class='paperType'>" + "C" + "</span>");
-		$("[data-paperType='journal'] h4").prepend("<span class='paperType'>" + "J" + "</span>");
+	$.getJSON('article/data/paperlist.json',{},function(data){
+		var template = Handlebars.compile($("#listTemp").html());
+		var inner = "";
+		var arr =[];
+		for( key in data){
+				arr.push(data[key]);
+		}
+		arr.sort(function(a, b){
+			return parseFloat(b.date) - parseFloat(a.date);
+		});
+		for(var i = 0;i < arr.length;i++){
+			arr[i].authors = arr[i].authors.replace(/Sheng Xiao/,"<strong>Sheng Xiao</strong>");
+			inner += template(arr[i]);
+		}
+		$("#paperList").append(inner);
+		$("#Cnum span").text($("[data-paperType='C']").length);
+		$("#Jnum span").text($("[data-paperType='J']").length);
+		$("[data-paperType='C'] h4").prepend("<span class='paperType'>" + "C" + "</span>");
+		$("[data-paperType='J'] h4").prepend("<span class='paperType'>" + "J" + "</span>");
 	});
 }();
 </script>

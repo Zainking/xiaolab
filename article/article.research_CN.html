@@ -1,36 +1,40 @@
 <style>
-	#Jnum,#Cnum{
-		font-style: italic;
-	}
-	#Jnum span,#Cnum span{
-		font-weight: 700;
-	}
-	#paperList{
-		list-style: none;
-	}
-	.time{
-		color: #777;
-	}
-	.type{
-		font-style: italic;
-	}
-	.paperType{
-		color: #d32024;
-		margin-right: 10px;
-	}
-	#paperList li{
-		padding-left: 20px;
-		border-left: 2px solid #aaa;
-		padding-bottom: 30px
-	}
-	#paperList li::before{
-		content: "";
-		display: inline-block;
-		border: 10px solid;
-		border-radius: 50%;
-		float: left;
-		margin-left: -30px;;
-	}
+#Jnum,#Cnum{
+	font-style: italic;
+}
+#Jnum span,#Cnum span{
+	font-weight: 700;
+}
+#paperList{
+	list-style: none;
+	margin-left: 70px;
+	margin-top: 20px;
+}
+.time{
+	float: left;
+	margin-left: -85px;
+	color: #777;
+}
+.type{
+	font-style: italic;
+}
+.paperType{
+	color: #d32024;
+	margin-right: 10px;
+}
+#paperList li{
+	padding-left: 20px;
+	border-left: 2px solid #aaa;
+	padding-bottom: 30px
+}
+#paperList li::before{
+	content: "";
+	display: inline-block;
+	border: 10px solid;
+	border-radius: 50%;
+	float: left;
+	margin-left: -30px;;
+}
 </style>
 <h2>当前研究重点</h2>
 <section>
@@ -48,22 +52,41 @@
 </section>
 <h3>论文发表</h3>
 <div id="timeline">
-	<section>
-		<p id="Jnum">期刊论文数量:<span>0</span></p>
-		<p id="Cnum">会议论文数量: <span>0</span></p>
-	</section>
 	<ul id="paperList">
-
+		<template id="listTemp">
+			<li data-paperType="{{type}}">
+			  <span class="time">{{date}}</span>
+			  <h4>{{pub_info}}</h4>
+			  <p>{{title}}, {{{authors}}}</p>
+			</li>
+		</template>
 	</ul>
+	<section>
+		<span id="Jnum">期刊论文:<span>0</span></span>
+		<span id="Cnum">会议论文: <span>0</span></span>
+	</section>
 </div>
 <script>
 !function(){
-	$.get('article/module/module.paperList.html',{},function(data){
-		$("#paperList").append(data);
-		$("#Cnum span").text($("[data-paperType='conference']").length);
-		$("#Jnum span").text($("[data-paperType='journal']").length);
-		$("[data-paperType='conference'] h4").prepend("<span class='paperType'>" + "会议论文" + "</span>");
-		$("[data-paperType='journal'] h4").prepend("<span class='paperType'>" + "期刊论文" + "</span>");
+	$.getJSON('article/data/paperlist.json',{},function(data){
+		var template = Handlebars.compile($("#listTemp").html());
+		var inner = "";
+		var arr =[];
+		for( key in data){
+				arr.push(data[key]);
+		}
+		arr.sort(function(a, b){
+			return parseFloat(b.date) - parseFloat(a.date);
+		});
+		for(var i = 0;i < arr.length;i++){
+			arr[i].authors = arr[i].authors.replace(/Sheng Xiao/,"<strong>Sheng Xiao</strong>");
+			inner += template(arr[i]);
+		}
+		$("#paperList").append(inner);
+		$("#Cnum span").text($("[data-paperType='C']").length);
+		$("#Jnum span").text($("[data-paperType='J']").length);
+		$("[data-paperType='C'] h4").prepend("<span class='paperType'>" + "会议" + "</span>");
+		$("[data-paperType='J'] h4").prepend("<span class='paperType'>" + "期刊" + "</span>");
 	});
 }();
 </script>
