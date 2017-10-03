@@ -7,8 +7,12 @@
 	}
 	#paperList{
 		list-style: none;
+		margin-left: 70px;
+		margin-top: 20px;
 	}
 	.time{
+		float: left;
+		margin-left: -85px;
 		color: #777;
 	}
 	.type{
@@ -48,13 +52,13 @@
 </section>
 <h3>Papers and Articles</h3>
 <div id="timeline">
-	<section>
-		<p id="Jnum">Journal Articles Num:<span>0</span></p>
-		<p id="Cnum">Conference Papers Num: <span>0</span></p>
-	</section>
 	<ul id="paperList">
 
 	</ul>
+	<section>
+		<span id="Jnum">Journal Article:<span>0</span></span>,
+		<span id="Cnum">Conference Paper: <span>0</span></span>
+	</section>
 </div>
 <script>
 !function(){
@@ -62,8 +66,8 @@
 		$("#paperList").append(data);
 		$("#Cnum span").text($("[data-paperType='conference']").length);
 		$("#Jnum span").text($("[data-paperType='journal']").length);
-		$("[data-paperType='conference'] h4").prepend("<span class='paperType'>" + "Conference Papers" + "</span>");
-		$("[data-paperType='journal'] h4").prepend("<span class='paperType'>" + "Journal Articles" + "</span>");
+		$("[data-paperType='conference'] h4").prepend("<span class='paperType'>" + "C" + "</span>");
+		$("[data-paperType='journal'] h4").prepend("<span class='paperType'>" + "J" + "</span>");
 	});
 }();
 </script>
