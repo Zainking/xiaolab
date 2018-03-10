@@ -1,1 +1,170 @@
-{"0": {"title": "Malware Variant Detection Using Opcode Image Recognition with Small Training Sets", "pub_info": "ICCCN 2016", "type": "C", "authors": "Jixin Zhang, Zheng Qin, Hui Yin, Lu Ou, Sheng Xiao, Yupeng Hu", "date": "2016.8"}, "1": {"title": "Context-Centric Target Localization with Optimal Anchor Deployments", "pub_info": "ICNP 2015, (CCF-B)", "type": "C", "authors": "Qingquan Zhang; Wei Xu; Zhichuan Huang; Ziqiao Zhou; Ping Yi; Ting Zhu; Sheng Xiao", "date": "2015.11"}, "2": {"title": "Fingerprint-free tracking with dynamic enhanced field division", "pub_info": "INFOCOM 2015, (CCF-A)", "type": "C", "authors": "Qingquan Zhang; Ziqiao Zhou; Wei Xu; Jing Qi; Chenxi Guo; Ping Yi; Ting Zhu; Sheng Xiao", "date": "2015.4"}, "3": {"title": "IDES: Incentive-driven distributed energy sharing in sustainable microgrids", "pub_info": "IGCC 2014", "type": "C", "authors": "Weigang Zhong; Zhichuan Huang; Ting Zhu; Yu Gu; Qingquan Zhang; Ping Yi; Dingde Jiang; Sheng Xiao", "date": "2014.11"}, "4": {"title": "EEP2P: an energy-efficient and economy-efficient P2P network protocol", "pub_info": "IGCC 2014", "type": "C", "authors": "Ziqiao Zhou; Mengjun Xie; Ting Zhu; Wei Xu; Ping Yi; Zhichuan Huang; Qingquan Zhang; Sheng Xiao", "date": "2014.11"}, "5": {"title": "Secure ranked multi-keyword search for multiple data owners in cloud computing", "pub_info": "DSN 2014, (CCF-B)", "type": "C", "authors": "Wei Zhang, Sheng Xiao, Yaping Lin, Ting Zhou, Siwang Zhou", "date": "2014.6"}, "6": {"title": "Reliability Analysis for Cryptographic Key Management", "pub_info": "ICC 2014", "type": "C", "authors": "Sheng Xiao, Weibo Gong, Don Towsley", "date": "2014.6"}, "7": {"title": "Secure distributed keyword search in multiple clouds", "pub_info": "IWQoS 2014, (CCF-B)", "type": "C", "authors": "Wei Zhang; Yaping Lin; Sheng Xiao; Qin Liu; Ting Zhou", "date": "2014.4"}, "8": {"title": "Secure and verifiable top-k query in two-tiered sensor networks", "pub_info": "SecureComm 2013", "type": "C", "authors": "Ting Zhou; Yaping Lin; Wei Zhang; Sheng Xiao; Jinguo Li", "date": "2013.9"}, "9": {"title": "From uncertainty to secrecy: A dynamic approach", "pub_info": "ASILOMAR 2010", "type": "C", "authors": "Sheng Xiao, Weibo Gong, Don Towsley", "date": "2010.11"}, "10": {"title": "Mobility Can Help: Protect User Identity with Dynamic Credential", "pub_info": "MDM 2010", "type": "C", "authors": "Sheng Xiao, Weibo Gong", "date": "2010.5"}, "11": {"title": "Secure wireless communication with dynamic secrets", "pub_info": "INFOCOM 2010, (Best Paper Runner-up, CCF-A)", "type": "C", "authors": "Sheng Xiao, Weibo Gong, Don Towsley", "date": "2010.3"}, "12": {"title": "A three-stage load-balancing switch", "pub_info": "INFOCOM 2008 (CCF-A)", "type": "C", "authors": "Xiaolin Wang, Yan Cai, Sheng Xiao, Weibo Gong", "date": "2008.4"}, "13": {"title": "Dense parity check based secrecy sharing in wireless communications", "pub_info": "Globecom 2007", "type": "C", "authors": "Sheng Xiao, Hossein Pishro-Nik, Weibo Gong", "date": "2007.11"}, "14": {"title": "Privacy and Integrity Preserving Top- $k$ Query Processing for Two-Tiered Sensor Networks", "pub_info": "IEEE/ACM Transactions on Networking (CCF-A),", "type": "J", "authors": "Rui Li; Alex X. Liu; Sheng Xiao; Hongyue Xu; Bezawada Bruhadeshwar; Ann L. Wang", "date": "2017.5"}, "15": {"title": "Optimizing energy consumption for data centers", "pub_info": "Renewable and Sustainable Energy Reviews", "type": "J", "authors": "Huigui Rong, Haoming Zhang, Sheng Xiao, Canbing Li, Chunhua Hu", "date": "2016.5"}, "16": {"title": "Privacy Preserving Ranked Multi-Keyword Search for Multiple Data Owners in Cloud Computing", "pub_info": "IEEE Transactions On Computers (CCF-A)", "type": "J", "authors": "Wei Zhang, Yaping Lin, Sheng Xiao, Jie Wu, Siwang Zhou", "date": "2016.5"}, "17": {"title": "Cooperative Data Reduction in Wireless Sensor Network", "pub_info": "ACM Transactions On Embedded Computing Systems (CCF-B)", "type": "J", "authors": "Shiwen Zhang, Qingquan Zhang, Sheng Xiao*, Ting Zhu, Yu Gu, Yaping Lin", "date": "2015.12"}, "18": {"title": "A Dominating Error Region Strategy for Improving the Bit-Flipping LDPC Decoder of SSDs", "pub_info": "IEEE Transactions On circuits and Systems II", "type": "J", "authors": "Yupeng Hu; Shun Song; Sheng Xiao; Quan Xu; Nong Xiao; Zheng Qin", "date": "2015.6"}, "19": {"title": "Big data in future sensing", "pub_info": "International Journal on Distributed Sensor Networks", "type": "J", "authors": "Ting Zhu, Qingquan Zhang, Sheng Xiao*, Yu Gu, Ping Yi, Yanhua Li", "date": "2015.1"}, "20": {"title": "Emergent technologies in big data sensing: a survey", "pub_info": "International Journal on Distributed Sensor Networks", "type": "J", "authors": "Ting Zhu, Sheng Xiao*, Qingquan Zhang", "date": "2015.1"}, "21": {"title": "A Dynamic Secret-Based Encryption Scheme for Smart Grid Wireless Communication", "pub_info": "IEEE Transactions On Smart Grid", "type": "J", "authors": "Ting Liu; Yang Liu; Yashan Mao; Yao Sun; Xiaohong Guan; Weibo Gong; Sheng Xiao", "date": "2014.5"}}
+{
+    "0": {
+        "title": "Malware Variant Detection Using Opcode Image Recognition with Small Training Sets",
+        "pub_info": "ICCCN 2016",
+        "type": "C",
+        "authors": "Jixin Zhang, Zheng Qin, Hui Yin, Lu Ou, Sheng Xiao, Yupeng Hu",
+        "date": "2016.8"
+    },
+    "1": {
+        "title": "Context-Centric Target Localization with Optimal Anchor Deployments",
+        "pub_info": "ICNP 2015, (CCF-B)",
+        "type": "C",
+        "authors": "Qingquan Zhang; Wei Xu; Zhichuan Huang; Ziqiao Zhou; Ping Yi; Ting Zhu; Sheng Xiao",
+        "date": "2015.11"
+    },
+    "2": {
+        "title": "Fingerprint-free tracking with dynamic enhanced field division",
+        "pub_info": "INFOCOM 2015, (CCF-A)",
+        "type": "C",
+        "authors": "Qingquan Zhang; Ziqiao Zhou; Wei Xu; Jing Qi; Chenxi Guo; Ping Yi; Ting Zhu; Sheng Xiao",
+        "date": "2015.4"
+    },
+    "3": {
+        "title": "IDES: Incentive-driven distributed energy sharing in sustainable microgrids",
+        "pub_info": "IGCC 2014",
+        "type": "C",
+        "authors": "Weigang Zhong; Zhichuan Huang; Ting Zhu; Yu Gu; Qingquan Zhang; Ping Yi; Dingde Jiang; Sheng Xiao",
+        "date": "2014.11"
+    },
+    "4": {
+        "title": "EEP2P: an energy-efficient and economy-efficient P2P network protocol",
+        "pub_info": "IGCC 2014",
+        "type": "C",
+        "authors": "Ziqiao Zhou; Mengjun Xie; Ting Zhu; Wei Xu; Ping Yi; Zhichuan Huang; Qingquan Zhang; Sheng Xiao",
+        "date": "2014.11"
+    },
+    "5": {
+        "title": "Secure ranked multi-keyword search for multiple data owners in cloud computing",
+        "pub_info": "DSN 2014, (CCF-B)",
+        "type": "C",
+        "authors": "Wei Zhang, Sheng Xiao, Yaping Lin, Ting Zhou, Siwang Zhou",
+        "date": "2014.6"
+    },
+    "6": {
+        "title": "Reliability Analysis for Cryptographic Key Management",
+        "pub_info": "ICC 2014",
+        "type": "C",
+        "authors": "Sheng Xiao, Weibo Gong, Don Towsley",
+        "date": "2014.6"
+    },
+    "7": {
+        "title": "Secure distributed keyword search in multiple clouds",
+        "pub_info": "IWQoS 2014, (CCF-B)",
+        "type": "C",
+        "authors": "Wei Zhang; Yaping Lin; Sheng Xiao; Qin Liu; Ting Zhou",
+        "date": "2014.4"
+    },
+    "8": {
+        "title": "Secure and verifiable top-k query in two-tiered sensor networks",
+        "pub_info": "SecureComm 2013",
+        "type": "C",
+        "authors": "Ting Zhou; Yaping Lin; Wei Zhang; Sheng Xiao; Jinguo Li",
+        "date": "2013.9"
+    },
+    "9": {
+        "title": "From uncertainty to secrecy: A dynamic approach",
+        "pub_info": "ASILOMAR 2010",
+        "type": "C",
+        "authors": "Sheng Xiao, Weibo Gong, Don Towsley",
+        "date": "2010.11"
+    },
+    "10": {
+        "title": "Mobility Can Help: Protect User Identity with Dynamic Credential",
+        "pub_info": "MDM 2010",
+        "type": "C",
+        "authors": "Sheng Xiao, Weibo Gong",
+        "date": "2010.5"
+    },
+    "11": {
+        "title": "Secure wireless communication with dynamic secrets",
+        "pub_info": "INFOCOM 2010, (Best Paper Runner-up, CCF-A)",
+        "type": "C",
+        "authors": "Sheng Xiao, Weibo Gong, Don Towsley",
+        "date": "2010.3"
+    },
+    "12": {
+        "title": "A three-stage load-balancing switch",
+        "pub_info": "INFOCOM 2008 (CCF-A)",
+        "type": "C",
+        "authors": "Xiaolin Wang, Yan Cai, Sheng Xiao, Weibo Gong",
+        "date": "2008.4"
+    },
+    "13": {
+        "title": "Dense parity check based secrecy sharing in wireless communications",
+        "pub_info": "Globecom 2007",
+        "type": "C",
+        "authors": "Sheng Xiao, Hossein Pishro-Nik, Weibo Gong",
+        "date": "2007.11"
+    },
+    "14": {
+        "title": "Privacy and Integrity Preserving Top- $k$ Query Processing for Two-Tiered Sensor Networks",
+        "pub_info": "IEEE/ACM Transactions on Networking (CCF-A),",
+        "type": "J",
+        "authors": "Rui Li; Alex X. Liu; Sheng Xiao; Hongyue Xu; Bezawada Bruhadeshwar; Ann L. Wang",
+        "date": "2017.5"
+    },
+    "15": {
+        "title": "Optimizing energy consumption for data centers",
+        "pub_info": "Renewable and Sustainable Energy Reviews",
+        "type": "J",
+        "authors": "Huigui Rong, Haoming Zhang, Sheng Xiao, Canbing Li, Chunhua Hu",
+        "date": "2016.5"
+    },
+    "16": {
+        "title": "Privacy Preserving Ranked Multi-Keyword Search for Multiple Data Owners in Cloud Computing",
+        "pub_info": "IEEE Transactions On Computers (CCF-A)",
+        "type": "J",
+        "authors": "Wei Zhang, Yaping Lin, Sheng Xiao, Jie Wu, Siwang Zhou",
+        "date": "2016.5"
+    },
+    "17": {
+        "title": "Cooperative Data Reduction in Wireless Sensor Network",
+        "pub_info": "ACM Transactions On Embedded Computing Systems (CCF-B)",
+        "type": "J",
+        "authors": "Shiwen Zhang, Qingquan Zhang, Sheng Xiao*, Ting Zhu, Yu Gu, Yaping Lin",
+        "date": "2015.12"
+    },
+    "18": {
+        "title": "A Dominating Error Region Strategy for Improving the Bit-Flipping LDPC Decoder of SSDs",
+        "pub_info": "IEEE Transactions On circuits and Systems II",
+        "type": "J",
+        "authors": "Yupeng Hu; Shun Song; Sheng Xiao; Quan Xu; Nong Xiao; Zheng Qin",
+        "date": "2015.6"
+    },
+    "19": {
+        "title": "Big data in future sensing",
+        "pub_info": "International Journal on Distributed Sensor Networks",
+        "type": "J",
+        "authors": "Ting Zhu, Qingquan Zhang, Sheng Xiao*, Yu Gu, Ping Yi, Yanhua Li",
+        "date": "2015.1"
+    },
+    "20": {
+        "title": "Emergent technologies in big data sensing: a survey",
+        "pub_info": "International Journal on Distributed Sensor Networks",
+        "type": "J",
+        "authors": "Ting Zhu, Sheng Xiao*, Qingquan Zhang",
+        "date": "2015.1"
+    },
+    "21": {
+        "title": "A Dynamic Secret-Based Encryption Scheme for Smart Grid Wireless Communication",
+        "pub_info": "IEEE Transactions On Smart Grid",
+        "type": "J",
+        "authors": "Ting Liu; Yang Liu; Yashan Mao; Yao Sun; Xiaohong Guan; Weibo Gong; Sheng Xiao",
+        "date": "2014.5"
+    },
+    "22": {
+        "title": "DNA-X: Dynamic Network Authentication using SGX",
+        "pub_info": "ICCSP'18",
+        "type": "C",
+        "authors": "Haiyou Sun and Sheng Xiao",
+        "date": "2018.3"
+    },
+    "2018.3": {
+        "title": "一种基于引文网络的文献原创性贡献度衡量方法",
+        "pub_info": "中国科技论文在线",
+        "type": "J",
+        "authors": "李佳煜，肖晟",
+        "date": "2018.3"
+    }
+}

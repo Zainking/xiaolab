@@ -80,6 +80,7 @@
 		});
 		for(var i = 0;i < arr.length;i++){
 			arr[i].authors = arr[i].authors.replace(/Sheng Xiao/,"<strong>Sheng Xiao</strong>");
+			arr[i].authors = arr[i].authors.replace(/肖晟/,"<strong>肖晟</strong>");
 			inner += template(arr[i]);
 		}
 		$("#paperList").append(inner);
