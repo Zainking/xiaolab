@@ -31,7 +31,7 @@
 		loadArticle(this.getAttribute('href').split("#")[1]);
 	});
 	$("#english").click(function(){
-        window.location.href = "index.html#" + (window.location.hash.split("#")[1] || "")
+        window.location.href = "index_EN.html#" + (window.location.hash.split("#")[1] || "")
 	});
 })()
 

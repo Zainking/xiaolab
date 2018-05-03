@@ -26,8 +26,5 @@
 	$("#chinese").click(function(){
         window.location.href = "index_CN.html#" + (window.location.hash.split("#")[1] || "")
 	});
-	$("#english").click(function () {
-		window.location.href = "index_EN.html#" + (window.location.hash.split("#")[1] || "")
-	});
 })()
 
